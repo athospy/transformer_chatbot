@@ -1,0 +1,28 @@
+# Ignore model weights
+*.bin
+*.safetensors
+
+# Ignore datasets
+*.csv
+*.tsv
+*.json
+*.h5
+*.hdf5
+
+# Ignore temporary files
+*.tmp
+*.log
+*.out
+
+# Ignore virtual environment directories
+trans_chat/
+.env/
+__pycache__/
+*.pyc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore results and checkpoints
+results/
+checkpoints/
