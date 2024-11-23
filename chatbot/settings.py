@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=mh=cf^k2uv@m7d2yt=4zk8c%of#t6@t_3-5b1m^1#%1jfv1^d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chatbot.santiagomorel.dev']
 
 
 # Application definition

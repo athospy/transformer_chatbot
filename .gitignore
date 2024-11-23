@@ -26,3 +26,5 @@ __pycache__/
 # Ignore results and checkpoints
 results/
 checkpoints/
+
+core/logs/
