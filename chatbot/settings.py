@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 
+from django.core.exceptions import ImproperlyConfigured
+from django.core.management.utils import get_random_secret_key
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,13 +23,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=mh=cf^k2uv@m7d2yt=4zk8c%of#t6@t_3-5b1m^1#%1jfv1^d'
+# Settings that differ per environment come from environment variables (see .env.example).
+# DJANGO_DEBUG=1 turns on debug mode for local development only.
+DEBUG = os.environ.get('DJANGO_DEBUG', '') == '1'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# The secret key signs cookies and sessions, so it must never be committed.
+# Production must set DJANGO_SECRET_KEY; local debug runs get a throwaway random key.
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+if not SECRET_KEY:
+    if not DEBUG:
+        raise ImproperlyConfigured('Set DJANGO_SECRET_KEY (or DJANGO_DEBUG=1 for local development).')
+    SECRET_KEY = get_random_secret_key()
 
-ALLOWED_HOSTS = ['chatbot.santiagomorel.dev']
+# Comma-separated host names, e.g. "chatbot.example.com"
+ALLOWED_HOSTS = [h.strip() for h in os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',') if h.strip()]
 
 
 # Application definition

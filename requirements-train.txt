@@ -1,0 +1,7 @@
+# Extra packages for core/training.py and core/program_maker.py.
+# The 2024 training run didn't record their versions.
+-r requirements.txt
+datasets
+pandas
+accelerate
+tensorboard

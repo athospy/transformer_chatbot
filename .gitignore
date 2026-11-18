@@ -28,3 +28,9 @@ results/
 checkpoints/
 
 core/logs/
+# Local database, editor settings, environment files, virtual environments
+db.sqlite3
+.idea/
+.env
+transenv/
+venv/
