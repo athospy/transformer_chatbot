@@ -1,102 +1,110 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+{% load static %}<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Chatbot</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts Link For Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>PSU programs assistant · fine-tuned DialoGPT demo</title>
+    <meta name="description" content="A small chatbot about Pittsburg State University programs: DialoGPT-small fine-tuned with Hugging Face Transformers and PyTorch, served by Django on CPU.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PSU programs assistant · fine-tuned DialoGPT demo">
+    <meta property="og:description" content="DialoGPT-small fine-tuned on Pittsburg State University program Q&amp;A, served by Django on a 1-CPU server. A learning project by Santiago Morel.">
+    <meta property="og:url" content="https://chatbot.santiagomorel.dev/">
+    <meta name="theme-color" content="#f4f6fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="{% static 'img/favicon.svg' %}" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    {# ?v= makes browsers fetch the new file after a deploy (nginx serves /static/ with no versioning) #}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2">
   </head>
   <body>
-
-    <div class="chatbot">
-        <header>
-            <h2>PSU ChatBot 2.0</h2>
-            <span class="close-btn material-symbols-outlined">close</span>
-        </header>
-        <ul class="chatbox">
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p>Hi there <br>How can I help you today?</p>
-            </li>
-        </ul>
-        <div class="chat-input">
-            <textarea id="user-input" placeholder="Enter a message..." spellcheck="false" required></textarea>
-            <span id="send-btn" class="material-symbols-rounded">send</span>
+    {# Icons: simplified Lucide icons (ISC license), inline so there's no icon font to download #}
+    <main class="app">
+      <header class="app-header">
+        <div class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M22 10v6"/><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         </div>
-    </div>
+        <div class="titles">
+          <h1>PSU programs assistant</h1>
+          <p class="subtitle">Fine-tuned DialoGPT-small · runs on CPU · about 10 s per answer</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" class="btn-ghost" id="about-btn" aria-haspopup="dialog">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span class="btn-label">How it works</span>
+          </button>
+          <button type="button" class="btn-ghost" id="clear-btn" aria-label="Clear chat" title="Clear chat">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          </button>
+        </div>
+      </header>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script>
-        $(document).ready(function() {
-            const closeBtn = $(".close-btn");
-            closeBtn.on("click", function() {
-                $(".chatbot").hide();
-            });
+      <div class="messages" id="messages" role="log" aria-live="polite" aria-label="Conversation">
+        <section class="welcome" aria-label="About this chatbot">
+          <p>Ask about Pittsburg State University's academic programs.</p>
+          <p class="note">It's a small model fine-tuned in 2024 on about 170 question–answer pairs, so answers are often imperfect. <button type="button" class="link-btn" data-open-about>Here's why</button>.</p>
+          <p class="hint">Try one:</p>
+          <div class="suggestions">
+            {% for question in suggested_questions %}
+              <button type="button" class="chip" data-question="{{ question }}">{{ question }}</button>
+            {% endfor %}
+          </div>
+        </section>
+      </div>
 
-            const chatbotToggler = $(".chatbot-toggler");
-            const chatbox = $(".chatbox");
-            const chatInput = $("#user-input");
-            const sendChatBtn = $("#send-btn");
+      <form class="composer" id="composer">
+        <label for="user-input" class="sr-only">Your question</label>
+        <textarea id="user-input" rows="1" maxlength="{{ max_message_chars }}" placeholder="Ask about a PSU program" autocomplete="off" spellcheck="true"></textarea>
+        <button type="submit" class="send-btn" id="send-btn" aria-label="Send">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4Z"/></svg>
+        </button>
+      </form>
+      <p class="counter" id="counter" aria-live="polite"></p>
 
-            // Add a chat bubble. Text is set with .text(), never as HTML, so neither the
-            // user's message nor the model's answer can inject markup or scripts.
-            const addMessage = (type, text) => {
-                const item = $('<li>').addClass('chat ' + type);
-                if (type === 'incoming') {
-                    item.append($('<span>').addClass('material-symbols-outlined').text('smart_toy'));
-                }
-                item.append($('<p>').text(text));
-                chatbox.append(item);
-                chatbox.scrollTop(chatbox[0].scrollHeight);
-            };
+      <footer class="app-footer">
+        Built by <a href="https://santiagomorel.dev/">Santiago Morel</a> ·
+        <a href="https://github.com/athospy/transformer_chatbot">Code on GitHub</a>
+      </footer>
+    </main>
 
-            const sendMessage = () => {
-                const userMessage = chatInput.val().trim();
-                if (!userMessage) return;
+    <dialog class="about" id="about-dialog" aria-labelledby="about-title">
+      <div class="about-body">
+        <h2 id="about-title">How it works</h2>
+        <p>A learning project from November 2024 that covers the whole loop: build a small dataset, fine-tune a language model, save it, serve it behind a web UI, and deploy it.</p>
 
-                // Append the user's message to the chat
-                addMessage('outgoing', userMessage);
-                addMessage('incoming', 'Thinking...');
-                chatInput.val(''); // Clear input field
+        <h3>Model</h3>
+        <p><a href="https://huggingface.co/microsoft/DialoGPT-small">microsoft/DialoGPT-small</a>, a 124M-parameter GPT-2 model, fine-tuned with Hugging Face Transformers and PyTorch on a laptop CPU.</p>
 
-                // AJAX call to send message to backend
-                $.ajax({
-                    url: '/api/chat/',
-                    type: 'POST',
-                    data: JSON.stringify({ message: userMessage }),
-                    contentType: 'application/json',
-                    success: function(data) {
-                        // Remove typing indicator
-                        chatbox.find('.incoming:last').remove();
+        <h3>Data</h3>
+        <p>About 170 question–answer pairs written from PSU's program pages. A script added reworded and shortened variants of each one.</p>
 
-                        addMessage('incoming', data.response);
-                    },
-                    error: function(xhr, status, error) {
-                        chatbox.find('.incoming:last').remove();
-                        addMessage('incoming', 'Sorry, something went wrong (' + (error || 'network error') + '). Please try again.');
-                    }
-                });
-            }
+        <h3>Training</h3>
+        <p>AdamW (learning rate 2e-5) with a cosine schedule, effective batch size 16, up to 10 epochs, an 80/20 train/validation split, and early stopping on validation loss.</p>
 
-            // Handle Enter key press
-            chatInput.on("keydown", (e) => {
-                if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
-                    e.preventDefault();
-                    sendMessage(); // Trigger the send message function
-                }
-            });
+        <h3>Serving</h3>
+        <p>Django and gunicorn (1 worker, 4 threads) behind nginx, on a 1-vCPU, 2 GB server. Each answer is generated with:</p>
+        <ul class="settings">
+          {% for name, value in generation_settings.items %}
+            <li><code>{{ name }}={{ value }}</code></li>
+          {% endfor %}
+        </ul>
 
-            // Send message when the send button is clicked
-            sendChatBtn.on("click", sendMessage);
+        <h3>Why the answers are weak</h3>
+        <p>In training, the question and the answer were tokenized separately and lined up position by position. A causal language model needs them as one sequence (question, end marker, answer) with the loss computed only on the answer. So the model learned the vocabulary of PSU programs, but not how to answer the question asked.</p>
+        <p>Today I'd fix that format, and compare the result against a retrieval baseline that returns the closest of the 170 written answers. For a fixed FAQ like this one, retrieval is often the better tool.</p>
 
-            // Toggle the chatbot visibility
-            closeBtn.on("click", () => $('body').removeClass("show-chatbot"));
-            chatbotToggler.on("click", () => $('body').toggleClass("show-chatbot"));
-        });
-    </script>
+        <p class="about-links">
+          <a href="https://github.com/athospy/transformer_chatbot#known-limitations">Known limitations in the README</a> ·
+          <a href="https://santiagomorel.dev/">santiagomorel.dev</a>
+        </p>
+        <form method="dialog" class="about-actions">
+          <button type="submit" class="btn-primary">Close</button>
+        </form>
+      </div>
+    </dialog>
+
+    {{ generation_settings|json_script:"generation-settings" }}
+    <script src="{% static 'js/chat.js' %}?v=2" defer></script>
   </body>
 </html>

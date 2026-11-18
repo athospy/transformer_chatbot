@@ -14,23 +14,26 @@ save the model, serve it behind a web UI, and deploy it. The answers are **not**
 ## How it works
 
 ```
-browser (templates/index.html, jQuery)
+browser (templates/index.html + static/js/chat.js, no libraries)
    │  POST /api/chat/  {"message": "..."}
    ▼
 Django view (core/views.py)
    │  tokenizer.encode(message + eos)  →  model.generate(...)  →  decode only the new tokens
    ▼
-{"response": "..."}
+{"response": "...", "elapsed_ms": 9800}
 ```
 
-- `core/views.py` loads the fine-tuned model and tokenizer once per process, at import time.
-- Generation runs with 3 beams, at most 40 new tokens, `no_repeat_ngram_size=3` and
-  `repetition_penalty=1.2`. On the demo server's single CPU this takes about 8 s. The first version
+- `core/views.py` loads the fine-tuned model and tokenizer once per process, at import time. Its
+  `GENERATION_SETTINGS` are used for every answer and also listed on the page's "How it works" panel.
+- Generation runs with 3 beams, at most 40 new tokens, no repeated 3-word sequences and a
+  repetition penalty of 1.2. On the demo server's single CPU this takes about 8–12 s. The first version
   (5 beams, `max_length=100`) took 15–45 s.
 - Input is cut to 300 characters. Errors return JSON: `405` for anything but POST, `400` for a body
   that isn't JSON or an empty message.
-- The page adds every message with jQuery `.text()`, never as HTML, so neither user input nor model
-  output can inject markup.
+- The page (`static/js/chat.js`) adds every message with `textContent`, never as HTML, so neither user
+  input nor model output can inject markup. It allows one request at a time, shows a seconds counter
+  while the CPU works, gives up after 90 s, and offers "Try again" on errors. It suggests questions
+  taken from the training topics, and its "How it works" panel explains the model and its limits.
 
 ## How it was fine-tuned
 
@@ -67,6 +70,9 @@ AutoTokenizer.from_pretrained('microsoft/DialoGPT-small').save_pretrained('core/
 AutoModelForCausalLM.from_pretrained('microsoft/DialoGPT-small').save_pretrained('core/program_model')
 "
 ```
+
+For UI work, the tiny random model `sshleifer/tiny-gpt2` saved as `core/program_model` answers
+instantly (with nonsense).
 
 Or train your own: put a tab-separated `question<TAB>answer` file at `core/programs_simpler.tsv`,
 `pip install -r requirements-train.txt`, then run `cd core && python training.py`.
