@@ -1,0 +1,704 @@
+[
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Accelerated Pre-Med Path program at PSU?",
+    "expected": "What is the Accelerated Pre-Med Path program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Accounting at Pitt State?",
+    "expected": "Tell me about the Accounting program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Actuarial Science at Pittsburg State?",
+    "expected": "Tell me about the Actuarial Science program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Acturaial Science program",
+    "expected": "Tell me about the Actuarial Science program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Advanced Vehicle Systems program",
+    "expected": "What is the Advanced Vehicle Systems program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Art?",
+    "expected": "Tell me about the Art program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Art Education program at PSU?",
+    "expected": "What is the Art Education program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Art History at Pitt State?",
+    "expected": "Tell me about the Art History program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Art Studio Practice at Pittsburg State?",
+    "expected": "What is the Art Studio Practice program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Art Studio Pracitce program",
+    "expected": "What is the Art Studio Practice program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Astrophysics program",
+    "expected": "Tell me about the Astrophysics program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Autism Spectrum Disorders?",
+    "expected": "What is the Autism Spectrum Disorders program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Automation Engineering program at PSU?",
+    "expected": "Tell me about the Automation Engineering program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Automotive Mechanical Design at Pitt State?",
+    "expected": "What is the Automotive Mechanical Design program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Automotive Service Technology at Pittsburg State?",
+    "expected": "Tell me about the Automotive Service Technology program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Automtoive Service Technology program",
+    "expected": "Tell me about the Automotive Service Technology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Automotive Technical program",
+    "expected": "What is the Automotive Technical program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Automotive Technology?",
+    "expected": "Tell me about the Automotive Technology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Automotive/Power Mechanics Technology program at PSU?",
+    "expected": "What is the Automotive/Power Mechanics Technology program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Bachelor of Music in Music Education at Pitt State?",
+    "expected": "Tell me about the Bachelor of Music in Music Education program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Behavior Analysis at Pittsburg State?",
+    "expected": "What is the Behavior Analysis program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Behaivor Analysis program",
+    "expected": "What is the Behavior Analysis program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Behavior Analysis Certificate program",
+    "expected": "Tell me about the Behavior Analysis Certificate program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Biochemistry?",
+    "expected": "What is the Biochemistry program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Biology program at PSU?",
+    "expected": "Tell me about the Biology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Biology Education at Pitt State?",
+    "expected": "What is the Biology Education program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Botany at Pittsburg State?",
+    "expected": "Tell me about the Botany program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Botnay program",
+    "expected": "Tell me about the Botany program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the BSN Nursing program",
+    "expected": "What is the BSN Nursing program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Building Information Modeling (BIM)?",
+    "expected": "Tell me about the Building Information Modeling (BIM) program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Building Principal program at PSU?",
+    "expected": "What is the Building Principal program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Business Administration at Pitt State?",
+    "expected": "Tell me about the Business Administration program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Business Administration (MBA) at Pittsburg State?",
+    "expected": "What is the Business Administration (MBA) program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Business Adminisrtation (MBA) program",
+    "expected": "What is the Business Administration (MBA) program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Business Administration (Online MBA) program",
+    "expected": "Tell me about the Business Administration (Online MBA) program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Business Economics?",
+    "expected": "What is the Business Economics program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Business Studies program at PSU?",
+    "expected": "Tell me about the Business Studies program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Career and Technical Education at Pitt State?",
+    "expected": "What is the Career and Technical Education program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Career and Technical Education Administrator at Pittsburg State?",
+    "expected": "Tell me about the Career and Technical Education Administrator program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Career and Technical Education Adminitsrator program",
+    "expected": "Tell me about the Career and Technical Education Administrator program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Career and Technical Education – Technical Teacher Education program",
+    "expected": "What is the Career and Technical Education – Technical Teacher Education program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Cell Biology?",
+    "expected": "Tell me about the Cell Biology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Cellular and Molecular Biology program at PSU?",
+    "expected": "What is the Cellular and Molecular Biology program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Ceramics at Pitt State?",
+    "expected": "Tell me about the Ceramics program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Chemistry at Pittsburg State?",
+    "expected": "What is the Chemistry program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Chemsitry program",
+    "expected": "What is the Chemistry program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Chemistry Education program",
+    "expected": "Tell me about the Chemistry Education program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Chemistry Pre-Medicine/Pre-Medical?",
+    "expected": "What is the Chemistry Pre-Medicine/Pre-Medical program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Child Development program at PSU?",
+    "expected": "Tell me about the Child Development program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Civil Construction at Pitt State?",
+    "expected": "What is the Civil Construction program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Clinical Psychology at Pittsburg State?",
+    "expected": "Tell me about the Clinical Psychology program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Clinical Psychloogy program",
+    "expected": "Tell me about the Clinical Psychology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Coaching program",
+    "expected": "What is the Coaching program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Collision Repair and Insurance Management?",
+    "expected": "Tell me about the Collision Repair and Insurance Management program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Collision Repair and Insurance Management Technology program at PSU?",
+    "expected": "What is the Collision Repair and Insurance Management Technology program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Communication at Pitt State?",
+    "expected": "Tell me about the Communication program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Communication Education at Pittsburg State?",
+    "expected": "What is the Communication Education program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Communciation Education program",
+    "expected": "What is the Communication Education program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Community and Family Services program",
+    "expected": "Tell me about the Community and Family Services program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Company Management?",
+    "expected": "What is the Company Management program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Computer Science program at PSU?",
+    "expected": "Tell me about the Computer Science program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Can I study Construction at Pitt State?",
+    "expected": "What is the Construction program at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "What can you tell me about Construction Engineering Technology at Pittsburg State?",
+    "expected": "Tell me about the Construction Engineering Technology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "typo",
+    "question": "info on the Constrcution Engineering Technology program",
+    "expected": "Tell me about the Construction Engineering Technology program at Pittsburg State University.",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "info on the Construction Management program",
+    "expected": "What is the Construction Management program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Does Pittsburg State have Construction Technology?",
+    "expected": "Tell me about the Construction Technology program at Pittsburg State University.",
+    "split": "dev"
+  },
+  {
+    "kind": "paraphrase",
+    "question": "Is there a Construction Technology for Interior Design program at PSU?",
+    "expected": "What is the Construction Technology for Interior Design program at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Can I get an MBA in accounting at PSU?",
+    "expected": "Does Pittsburg State University have an Accounting MBA program?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "Is there a certificate in 3D printing / additive manufacturing?",
+    "expected": "What is the Additive Manufacturing Certificate program?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Does PSU have a doctorate for nurse practitioners?",
+    "expected": "Can I study Advanced Practice Nursing at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What's in the advanced studies in leadership program?",
+    "expected": "What does the Advanced Studies in Leadership program at Pittsburg State University cover?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "How many programs does Pitt State have?",
+    "expected": "How many academic programs does Pittsburg State University offer?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Which degree levels can I earn at PSU?",
+    "expected": "What types of degrees are available at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Can I take classes online at PSU?",
+    "expected": "Does Pittsburg State University offer online programs?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "Are there health care degrees at Pitt State?",
+    "expected": "Can I study healthcare-related programs at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Which engineering degrees does PSU have?",
+    "expected": "What are some of the engineering programs available at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Does PSU offer emphases within majors?",
+    "expected": "Are there any special emphasis programs at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "What certificates can I get at PSU?",
+    "expected": "What certificate programs does Pittsburg State University offer?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What business degrees does Pitt State offer?",
+    "expected": "What kind of business programs are available at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Where can I see the full list of PSU programs?",
+    "expected": "How can I explore programs offered by Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "Are there STEM programs at PSU?",
+    "expected": "Does Pittsburg State University offer any programs in science and technology?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Does PSU have programs for teachers?",
+    "expected": "Are there programs specifically for educators at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What do PSU's programs focus on?",
+    "expected": "What is the focus of Pittsburg State University's programs?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "What do I need to get admitted to PSU?",
+    "expected": "What are the admission requirements for Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Can I get scholarships or financial aid at Pitt State?",
+    "expected": "Does Pittsburg State University offer financial aid?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What clubs can I join at PSU?",
+    "expected": "What student organizations are available at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "Where can students live at PSU?",
+    "expected": "What are the housing options at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "Does PSU help students find jobs?",
+    "expected": "What career services are available at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What is student life like at Pitt State?",
+    "expected": "What is the campus life like at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "Can I study abroad through PSU?",
+    "expected": "Does Pittsburg State University offer study abroad programs?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What student support does PSU offer?",
+    "expected": "What support services are available for students at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "general",
+    "question": "What's available at the PSU library?",
+    "expected": "What are the library resources at Pittsburg State University?",
+    "split": "dev"
+  },
+  {
+    "kind": "general",
+    "question": "What sports teams does Pitt State have?",
+    "expected": "What athletic programs are available at Pittsburg State University?",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Is there a dental school at PSU?",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Can I study law at Pittsburg State?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Does PSU have a veterinary medicine program?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Is there a pharmacy degree at Pitt State?",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Does Pittsburg State offer aerospace engineering?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Is there a marine biology program at PSU?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Does PSU have an architecture degree?",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Is there a Graphic Design program at PSU?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Can I study Mathematics at Pitt State?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Does Pittsburg State have Social Work?",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "info on the Spanish program",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "What can you tell me about Theatre at Pittsburg State?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Is there a Plastics Engineering Technology program at PSU?",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "not_in_data",
+    "question": "Can I study History at Pitt State?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "What's the weather like in Kansas today?",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "off_topic",
+    "question": "Tell me a joke",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "Who won the Super Bowl?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "Write me a poem about autumn",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "off_topic",
+    "question": "What is 2 + 2?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "What is the capital of France?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "Give me a recipe for pancakes",
+    "expected": "none",
+    "split": "dev"
+  },
+  {
+    "kind": "off_topic",
+    "question": "Should I buy Tesla stock?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "How do I fix my car's brakes?",
+    "expected": "none",
+    "split": "test"
+  },
+  {
+    "kind": "off_topic",
+    "question": "Explain how a computer works",
+    "expected": "none",
+    "split": "dev"
+  }
+]

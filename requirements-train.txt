@@ -1,7 +1,4 @@
-# Extra packages for core/training.py and core/program_maker.py.
-# The 2024 training run didn't record their versions.
+# core/training.py needs only requirements.txt.
+# pandas is used by core/program_maker.py, the 2024 data augmentation script kept for reference.
 -r requirements.txt
-datasets
 pandas
-accelerate
-tensorboard

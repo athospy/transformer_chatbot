@@ -1,0 +1,60 @@
+{
+  "counts": {
+    "dev": 41,
+    "test": 76
+  },
+  "retrieval": {
+    "tfidf": {
+      "threshold": 0.54,
+      "ms_per_question": 0.0,
+      "paraphrase": 73.0,
+      "typo": 71.4,
+      "general": 17.6,
+      "not_in_data": 55.6,
+      "off_topic": 66.7,
+      "answered_correctly": 57.4,
+      "says_dont_know": 60.0,
+      "wrong_answer": 23.7,
+      "overall": 57.9,
+      "invented_links": 0.0,
+      "dev_accuracy": 68.3
+    },
+    "embeddings": {
+      "threshold": 0.56,
+      "ms_per_question": 2.4,
+      "paraphrase": 91.9,
+      "typo": 71.4,
+      "general": 64.7,
+      "not_in_data": 55.6,
+      "off_topic": 100.0,
+      "answered_correctly": 82.0,
+      "says_dont_know": 73.3,
+      "wrong_answer": 13.2,
+      "overall": 80.3,
+      "invented_links": 0.0,
+      "dev_accuracy": 90.2
+    }
+  },
+  "generation": {
+    "dialogpt-2024": {
+      "ms_per_question": 964.1,
+      "right_link": 0.0,
+      "names_program": 18.2,
+      "token_f1_programs": 0.067,
+      "token_f1_general": 0.089,
+      "token_f1_all": 0.074,
+      "invented_links": 0.0,
+      "says_dont_know": 0.0
+    },
+    "dialogpt-2026": {
+      "ms_per_question": 625.0,
+      "right_link": 45.5,
+      "names_program": 47.7,
+      "token_f1_programs": 0.77,
+      "token_f1_general": 0.425,
+      "token_f1_all": 0.674,
+      "invented_links": 56.6,
+      "says_dont_know": 0.0
+    }
+  }
+}

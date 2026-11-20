@@ -6,6 +6,9 @@
 *.csv
 *.tsv
 *.json
+# ...except the small dataset and the eval files, which the repo needs
+!data/*.json
+!eval/*.json
 *.h5
 *.hdf5
 
@@ -34,3 +37,7 @@ db.sqlite3
 .env
 transenv/
 venv/
+
+# Downloaded models (see README)
+core/retriever_model/
+core/program_model/

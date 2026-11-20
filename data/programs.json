@@ -1,0 +1,690 @@
+[
+  {
+    "input": "What is the Accelerated Pre-Med Path program at Pittsburg State University?",
+    "response": "The Accelerated Pre-Med Path is an emphasis program in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/accelerated-pre-med-path/index.html"
+  },
+  {
+    "input": "Tell me about the Accounting program at Pittsburg State University.",
+    "response": "The Accounting program offers both a major and a minor. Details for the minor are here: https://www.pittstate.edu/business/programs/minors/accounting-minor.html and for the major here: https://www.pittstate.edu/business/programs/accounting/index.html"
+  },
+  {
+    "input": "Does Pittsburg State University have an Accounting MBA program?",
+    "response": "Yes, Pittsburg State University offers an MBA with an emphasis in Accounting, available online and on-campus. Check out the online program here: https://www.pittstate.edu/business/programs/online-business-administration-masters/accounting/index.html and the on-campus program here: https://www.pittstate.edu/business/programs/business-administration-masters/accounting/index.html"
+  },
+  {
+    "input": "What is the Additive Manufacturing Certificate program?",
+    "response": "The Additive Manufacturing Certificate at Pittsburg State University is a specialized certificate in the field of manufacturing. Find more information here: https://www.pittstate.edu/automotive-and-engineering/programs/certificates/additive-manufacturing-certificate.html"
+  },
+  {
+    "input": "Can I study Advanced Practice Nursing at Pittsburg State University?",
+    "response": "Yes, Pittsburg State University offers a doctoral degree in Advanced Practice Nursing. More details are available here: https://www.pittstate.edu/nursing/programs/nursing-doctoral/index.html"
+  },
+  {
+    "input": "What does the Advanced Studies in Leadership program at Pittsburg State University cover?",
+    "response": "The Advanced Studies in Leadership program is an online education specialist degree in leadership. Details can be found here: https://www.pittstate.edu/teaching/programs/advanced-studies-in-leadership-eds/index.html"
+  },
+  {
+    "input": "Tell me about the Actuarial Science program at Pittsburg State University.",
+    "response": "The Actuarial Science program is an emphasis in the Mathematics department. More details can be found here: https://www.pittstate.edu/science/programs/mathematics/actuarial-science/index.html"
+  },
+  {
+    "input": "What is the Advanced Vehicle Systems program at Pittsburg State University?",
+    "response": "The Advanced Vehicle Systems program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/advanced-vehicle-systems/index.html"
+  },
+  {
+    "input": "Tell me about the Art program at Pittsburg State University.",
+    "response": "The Art program offers various emphases and certificates. More details can be found here: https://www.pittstate.edu/art/programs/art/index.html"
+  },
+  {
+    "input": "What is the Art Education program at Pittsburg State University?",
+    "response": "The Art Education program is an emphasis in the Art department. More details can be found here: https://www.pittstate.edu/art/programs/art-education/index.html"
+  },
+  {
+    "input": "Tell me about the Art History program at Pittsburg State University.",
+    "response": "The Art History program offers a certificate. More details can be found here: https://www.pittstate.edu/art/programs/art-history/index.html"
+  },
+  {
+    "input": "What is the Art Studio Practice program at Pittsburg State University?",
+    "response": "The Art Studio Practice program is an emphasis in the Art department. More details can be found here: https://www.pittstate.edu/art/programs/art-studio-practice/index.html"
+  },
+  {
+    "input": "Tell me about the Astrophysics program at Pittsburg State University.",
+    "response": "The Astrophysics program is an emphasis in the Physics department. More details can be found here: https://www.pittstate.edu/science/programs/physics/astrophysics/index.html"
+  },
+  {
+    "input": "What is the Autism Spectrum Disorders program at Pittsburg State University?",
+    "response": "The Autism Spectrum Disorders program offers an online graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/autism-spectrum-disorders/index.html"
+  },
+  {
+    "input": "Tell me about the Automation Engineering program at Pittsburg State University.",
+    "response": "The Automation Engineering program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/automation-engineering/index.html"
+  },
+  {
+    "input": "What is the Automotive Mechanical Design program at Pittsburg State University?",
+    "response": "The Automotive Mechanical Design program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-mechanical-design/index.html"
+  },
+  {
+    "input": "Tell me about the Automotive Service Technology program at Pittsburg State University.",
+    "response": "The Automotive Service Technology program offers various emphases. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-service-technology/index.html"
+  },
+  {
+    "input": "What is the Automotive Technical program at Pittsburg State University?",
+    "response": "The Automotive Technical program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-technical/index.html"
+  },
+  {
+    "input": "Tell me about the Automotive Technology program at Pittsburg State University.",
+    "response": "The Automotive Technology program offers various emphases. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/index.html"
+  },
+  {
+    "input": "What is the Automotive/Power Mechanics Technology program at Pittsburg State University?",
+    "response": "The Automotive/Power Mechanics Technology program is a 2+2 emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-power-mechanics-technology/index.html"
+  },
+  {
+    "input": "Tell me about the Bachelor of Music in Music Education program at Pittsburg State University.",
+    "response": "The Bachelor of Music in Music Education program is an emphasis in the Music department. More details can be found here: https://www.pittstate.edu/music/programs/bachelor-of-music-in-music-education/index.html"
+  },
+  {
+    "input": "What is the Behavior Analysis program at Pittsburg State University?",
+    "response": "The Behavior Analysis program offers a master's emphasis. More details can be found here: https://www.pittstate.edu/psychology/programs/behavior-analysis/index.html"
+  },
+  {
+    "input": "Tell me about the Behavior Analysis Certificate program at Pittsburg State University.",
+    "response": "The Behavior Analysis Certificate program offers a graduate certificate. More details can be found here: https://www.pittstate.edu/psychology/programs/behavior-analysis-certificate/index.html"
+  },
+  {
+    "input": "What is the Biochemistry program at Pittsburg State University?",
+    "response": "The Biochemistry program is an emphasis in the Chemistry department. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/biochemistry/index.html"
+  },
+  {
+    "input": "Tell me about the Biology program at Pittsburg State University.",
+    "response": "The Biology program offers various emphases. More details can be found here: https://www.pittstate.edu/science/programs/biology/index.html"
+  },
+  {
+    "input": "What is the Biology Education program at Pittsburg State University?",
+    "response": "The Biology Education program is an emphasis in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/biology-education/index.html"
+  },
+  {
+    "input": "Tell me about the Botany program at Pittsburg State University.",
+    "response": "The Botany program is an emphasis in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/botany/index.html"
+  },
+  {
+    "input": "What is the BSN Nursing program at Pittsburg State University?",
+    "response": "The BSN Nursing program is an emphasis in the Nursing department. More details can be found here: https://www.pittstate.edu/nursing/programs/bsn-nursing/index.html"
+  },
+  {
+    "input": "Tell me about the Building Information Modeling (BIM) program at Pittsburg State University.",
+    "response": "The Building Information Modeling (BIM) program is an emphasis in the Construction department. More details can be found here: https://www.pittstate.edu/engineering/programs/building-information-modeling/index.html"
+  },
+  {
+    "input": "What is the Building Principal program at Pittsburg State University?",
+    "response": "The Building Principal program offers an online graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/building-principal/index.html"
+  },
+  {
+    "input": "Tell me about the Business Administration program at Pittsburg State University.",
+    "response": "The Business Administration program offers a minor. More details can be found here: https://www.pittstate.edu/business/programs/business-administration/index.html"
+  },
+  {
+    "input": "What is the Business Administration (MBA) program at Pittsburg State University?",
+    "response": "The Business Administration (MBA) program offers a master's degree. More details can be found here: https://www.pittstate.edu/business/programs/business-administration-mba/index.html"
+  },
+  {
+    "input": "Tell me about the Business Administration (Online MBA) program at Pittsburg State University.",
+    "response": "The Business Administration (Online MBA) program offers an online master's degree. More details can be found here: https://www.pittstate.edu/business/programs/online-business-administration-mba/index.html"
+  },
+  {
+    "input": "What is the Business Economics program at Pittsburg State University?",
+    "response": "The Business Economics program offers various emphases. More details can be found here: https://www.pittstate.edu/business/programs/business-economics/index.html"
+  },
+  {
+    "input": "Tell me about the Business Studies program at Pittsburg State University.",
+    "response": "The Business Studies program offers a major. More details can be found here: https://www.pittstate.edu/business/programs/business-studies/index.html"
+  },
+  {
+    "input": "What is the Career and Technical Education program at Pittsburg State University?",
+    "response": "The Career and Technical Education program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education/index.html"
+  },
+  {
+    "input": "Tell me about the Career and Technical Education Administrator program at Pittsburg State University.",
+    "response": "The Career and Technical Education Administrator program offers a graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education-administrator/index.html"
+  },
+  {
+    "input": "What is the Career and Technical Education – Technical Teacher Education program at Pittsburg State University?",
+    "response": "The Career and Technical Education – Technical Teacher Education program is a 2+2 emphasis. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education-technical-teacher-education/index.html"
+  },
+  {
+    "input": "Tell me about the Cell Biology program at Pittsburg State University.",
+    "response": "The Cell Biology program offers a minor. More details can be found here: https://www.pittstate.edu/science/programs/biology/cell-biology/index.html"
+  },
+  {
+    "input": "What is the Cellular and Molecular Biology program at Pittsburg State University?",
+    "response": "The Cellular and Molecular Biology program is an emphasis in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/cellular-and-molecular-biology/index.html"
+  },
+  {
+    "input": "Tell me about the Ceramics program at Pittsburg State University.",
+    "response": "The Ceramics program offers a certificate. More details can be found here: https://www.pittstate.edu/art/programs/ceramics/index.html"
+  },
+  {
+    "input": "What is the Chemistry program at Pittsburg State University?",
+    "response": "The Chemistry program offers various emphases. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/index.html"
+  },
+  {
+    "input": "Tell me about the Chemistry Education program at Pittsburg State University.",
+    "response": "The Chemistry Education program is an emphasis in the Chemistry department. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/chemistry-education/index.html"
+  },
+  {
+    "input": "What is the Chemistry Pre-Medicine/Pre-Medical program at Pittsburg State University?",
+    "response": "The Chemistry Pre-Medicine/Pre-Medical program is an emphasis in the Chemistry department. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/chemistry-pre-medicine/index.html"
+  },
+  {
+    "input": "Tell me about the Child Development program at Pittsburg State University.",
+    "response": "The Child Development program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/child-development/index.html"
+  },
+  {
+    "input": "What is the Civil Construction program at Pittsburg State University?",
+    "response": "The Civil Construction program is an emphasis in the Construction department. More details can be found here: https://www.pittstate.edu/engineering/programs/civil-construction/index.html"
+  },
+  {
+    "input": "Tell me about the Clinical Psychology program at Pittsburg State University.",
+    "response": "The Clinical Psychology program offers a master's emphasis. More details can be found here: https://www.pittstate.edu/psychology/programs/clinical-psychology/index.html"
+  },
+  {
+    "input": "What is the Coaching program at Pittsburg State University?",
+    "response": "The Coaching program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/coaching/index.html"
+  },
+  {
+    "input": "Tell me about the Collision Repair and Insurance Management program at Pittsburg State University.",
+    "response": "The Collision Repair and Insurance Management program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/collision-repair-and-insurance-management/index.html"
+  },
+  {
+    "input": "What is the Collision Repair and Insurance Management Technology program at Pittsburg State University?",
+    "response": "The Collision Repair and Insurance Management Technology program is a 2+2 emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/collision-repair-and-insurance-management-technology/index.html"
+  },
+  {
+    "input": "Tell me about the Communication program at Pittsburg State University.",
+    "response": "The Communication program offers various emphases. More details can be found here: https://www.pittstate.edu/communication/programs/communication/index.html"
+  },
+  {
+    "input": "What is the Communication Education program at Pittsburg State University?",
+    "response": "The Communication Education program is an emphasis in the Communication department. More details can be found here: https://www.pittstate.edu/communication/programs/communication-education/index.html"
+  },
+  {
+    "input": "Tell me about the Community and Family Services program at Pittsburg State University.",
+    "response": "The Community and Family Services program is an emphasis in the Family and Consumer Sciences department. More details can be found here: https://www.pittstate.edu/family/programs/community-and-family-services/index.html"
+  },
+  {
+    "input": "What is the Company Management program at Pittsburg State University?",
+    "response": "The Company Management program is an emphasis in the Business department. More details can be found here: https://www.pittstate.edu/business/programs/company-management/index.html"
+  },
+  {
+    "input": "Tell me about the Computer Science program at Pittsburg State University.",
+    "response": "The Computer Science program offers a major. More details can be found here: https://www.pittstate.edu/science/programs/computer-science/index.html"
+  },
+  {
+    "input": "What is the Construction program at Pittsburg State University?",
+    "response": "The Construction program is a 2+2 emphasis in the Construction department. More details can be found here: https://www.pittstate.edu/engineering/programs/construction/index.html"
+  },
+  {
+    "input": "Tell me about the Construction Engineering Technology program at Pittsburg State University.",
+    "response": "The Construction Engineering Technology program offers a major. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-engineering-technology/index.html"
+  },
+  {
+    "input": "What is the Construction Management program at Pittsburg State University?",
+    "response": "The Construction Management program offers various emphases. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-management/index.html"
+  },
+  {
+    "input": "Tell me about the Construction Technology program at Pittsburg State University.",
+    "response": "The Construction Technology program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-technology/index.html"
+  },
+  {
+    "input": "What is the Construction Technology for Interior Design program at Pittsburg State University?",
+    "response": "The Construction Technology for Interior Design program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-technology-for-interior/index.html"
+  },
+  {
+    "input": "What is the Accelerated Pre-Med Path program at Pittsburg State University?",
+    "response": "The Accelerated Pre-Med Path is an emphasis program in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/accelerated-pre-med-path/index.html"
+  },
+  {
+    "input": "Tell me about the Accounting program at Pittsburg State University.",
+    "response": "The Accounting program offers both a major and a minor. Details for the minor are here: https://www.pittstate.edu/business/programs/minors/accounting-minor.html and for the major here: https://www.pittstate.edu/business/programs/accounting/index.html"
+  },
+  {
+    "input": "Does Pittsburg State University have an Accounting MBA program?",
+    "response": "Yes, Pittsburg State University offers an MBA with an emphasis in Accounting, available online and on-campus. Check out the online program here: https://www.pittstate.edu/business/programs/online-business-administration-masters/accounting/index.html and the on-campus program here: https://www.pittstate.edu/business/programs/business-administration-masters/accounting/index.html"
+  },
+  {
+    "input": "What is the Additive Manufacturing Certificate program?",
+    "response": "The Additive Manufacturing Certificate at Pittsburg State University is a specialized certificate in the field of manufacturing. Find more information here: https://www.pittstate.edu/automotive-and-engineering/programs/certificates/additive-manufacturing-certificate.html"
+  },
+  {
+    "input": "Can I study Advanced Practice Nursing at Pittsburg State University?",
+    "response": "Yes, Pittsburg State University offers a doctoral degree in Advanced Practice Nursing. More details are available here: https://www.pittstate.edu/nursing/programs/nursing-doctoral/index.html"
+  },
+  {
+    "input": "What does the Advanced Studies in Leadership program at Pittsburg State University cover?",
+    "response": "The Advanced Studies in Leadership program is an online education specialist degree in leadership. Details can be found here: https://www.pittstate.edu/teaching/programs/advanced-studies-in-leadership-eds/index.html"
+  },
+  {
+    "input": "Tell me about the Actuarial Science program at Pittsburg State University.",
+    "response": "The Actuarial Science program is an emphasis in the Mathematics department. More details can be found here: https://www.pittstate.edu/science/programs/mathematics/actuarial-science/index.html"
+  },
+  {
+    "input": "What is the Advanced Vehicle Systems program at Pittsburg State University?",
+    "response": "The Advanced Vehicle Systems program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/advanced-vehicle-systems/index.html"
+  },
+  {
+    "input": "Tell me about the Art program at Pittsburg State University.",
+    "response": "The Art program offers various emphases and certificates. More details can be found here: https://www.pittstate.edu/art/programs/art/index.html"
+  },
+  {
+    "input": "What is the Art Education program at Pittsburg State University?",
+    "response": "The Art Education program is an emphasis in the Art department. More details can be found here: https://www.pittstate.edu/art/programs/art-education/index.html"
+  },
+  {
+    "input": "Tell me about the Art History program at Pittsburg State University.",
+    "response": "The Art History program offers a certificate. More details can be found here: https://www.pittstate.edu/art/programs/art-history/index.html"
+  },
+  {
+    "input": "What is the Art Studio Practice program at Pittsburg State University?",
+    "response": "The Art Studio Practice program is an emphasis in the Art department. More details can be found here: https://www.pittstate.edu/art/programs/art-studio-practice/index.html"
+  },
+  {
+    "input": "Tell me about the Astrophysics program at Pittsburg State University.",
+    "response": "The Astrophysics program is an emphasis in the Physics department. More details can be found here: https://www.pittstate.edu/science/programs/physics/astrophysics/index.html"
+  },
+  {
+    "input": "What is the Autism Spectrum Disorders program at Pittsburg State University?",
+    "response": "The Autism Spectrum Disorders program offers an online graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/autism-spectrum-disorders/index.html"
+  },
+  {
+    "input": "Tell me about the Automation Engineering program at Pittsburg State University.",
+    "response": "The Automation Engineering program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/automation-engineering/index.html"
+  },
+  {
+    "input": "What is the Automotive Mechanical Design program at Pittsburg State University?",
+    "response": "The Automotive Mechanical Design program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-mechanical-design/index.html"
+  },
+  {
+    "input": "Tell me about the Automotive Service Technology program at Pittsburg State University.",
+    "response": "The Automotive Service Technology program offers various emphases. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-service-technology/index.html"
+  },
+  {
+    "input": "What is the Automotive Technical program at Pittsburg State University?",
+    "response": "The Automotive Technical program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-technical/index.html"
+  },
+  {
+    "input": "Tell me about the Automotive Technology program at Pittsburg State University.",
+    "response": "The Automotive Technology program offers various emphases. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/index.html"
+  },
+  {
+    "input": "What is the Automotive/Power Mechanics Technology program at Pittsburg State University?",
+    "response": "The Automotive/Power Mechanics Technology program is a 2+2 emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/automotive-power-mechanics-technology/index.html"
+  },
+  {
+    "input": "Tell me about the Bachelor of Music in Music Education program at Pittsburg State University.",
+    "response": "The Bachelor of Music in Music Education program is an emphasis in the Music department. More details can be found here: https://www.pittstate.edu/music/programs/bachelor-of-music-in-music-education/index.html"
+  },
+  {
+    "input": "What is the Behavior Analysis program at Pittsburg State University?",
+    "response": "The Behavior Analysis program offers a master's emphasis. More details can be found here: https://www.pittstate.edu/psychology/programs/behavior-analysis/index.html"
+  },
+  {
+    "input": "Tell me about the Behavior Analysis Certificate program at Pittsburg State University.",
+    "response": "The Behavior Analysis Certificate program offers a graduate certificate. More details can be found here: https://www.pittstate.edu/psychology/programs/behavior-analysis-certificate/index.html"
+  },
+  {
+    "input": "What is the Biochemistry program at Pittsburg State University?",
+    "response": "The Biochemistry program is an emphasis in the Chemistry department. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/biochemistry/index.html"
+  },
+  {
+    "input": "Tell me about the Biology program at Pittsburg State University.",
+    "response": "The Biology program offers various emphases. More details can be found here: https://www.pittstate.edu/science/programs/biology/index.html"
+  },
+  {
+    "input": "What is the Biology Education program at Pittsburg State University?",
+    "response": "The Biology Education program is an emphasis in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/biology-education/index.html"
+  },
+  {
+    "input": "Tell me about the Botany program at Pittsburg State University.",
+    "response": "The Botany program is an emphasis in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/botany/index.html"
+  },
+  {
+    "input": "What is the BSN Nursing program at Pittsburg State University?",
+    "response": "The BSN Nursing program is an emphasis in the Nursing department. More details can be found here: https://www.pittstate.edu/nursing/programs/bsn-nursing/index.html"
+  },
+  {
+    "input": "Tell me about the Building Information Modeling (BIM) program at Pittsburg State University.",
+    "response": "The Building Information Modeling (BIM) program is an emphasis in the Construction department. More details can be found here: https://www.pittstate.edu/engineering/programs/building-information-modeling/index.html"
+  },
+  {
+    "input": "What is the Building Principal program at Pittsburg State University?",
+    "response": "The Building Principal program offers an online graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/building-principal/index.html"
+  },
+  {
+    "input": "Tell me about the Business Administration program at Pittsburg State University.",
+    "response": "The Business Administration program offers a minor. More details can be found here: https://www.pittstate.edu/business/programs/business-administration/index.html"
+  },
+  {
+    "input": "What is the Business Administration (MBA) program at Pittsburg State University?",
+    "response": "The Business Administration (MBA) program offers a master's degree. More details can be found here: https://www.pittstate.edu/business/programs/business-administration-mba/index.html"
+  },
+  {
+    "input": "Tell me about the Business Administration (Online MBA) program at Pittsburg State University.",
+    "response": "The Business Administration (Online MBA) program offers an online master's degree. More details can be found here: https://www.pittstate.edu/business/programs/online-business-administration-mba/index.html"
+  },
+  {
+    "input": "What is the Business Economics program at Pittsburg State University?",
+    "response": "The Business Economics program offers various emphases. More details can be found here: https://www.pittstate.edu/business/programs/business-economics/index.html"
+  },
+  {
+    "input": "Tell me about the Business Studies program at Pittsburg State University.",
+    "response": "The Business Studies program offers a major. More details can be found here: https://www.pittstate.edu/business/programs/business-studies/index.html"
+  },
+  {
+    "input": "What is the Career and Technical Education program at Pittsburg State University?",
+    "response": "The Career and Technical Education program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education/index.html"
+  },
+  {
+    "input": "Tell me about the Career and Technical Education Administrator program at Pittsburg State University.",
+    "response": "The Career and Technical Education Administrator program offers a graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education-administrator/index.html"
+  },
+  {
+    "input": "What is the Career and Technical Education – Technical Teacher Education program at Pittsburg State University?",
+    "response": "The Career and Technical Education – Technical Teacher Education program is a 2+2 emphasis. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education-technical-teacher-education/index.html"
+  },
+  {
+    "input": "Tell me about the Cell Biology program at Pittsburg State University.",
+    "response": "The Cell Biology program offers a minor. More details can be found here: https://www.pittstate.edu/science/programs/biology/cell-biology/index.html"
+  },
+  {
+    "input": "What is the Cellular and Molecular Biology program at Pittsburg State University?",
+    "response": "The Cellular and Molecular Biology program is an emphasis in the Biology department. More details can be found here: https://www.pittstate.edu/science/programs/biology/cellular-and-molecular-biology/index.html"
+  },
+  {
+    "input": "Tell me about the Ceramics program at Pittsburg State University.",
+    "response": "The Ceramics program offers a certificate. More details can be found here: https://www.pittstate.edu/art/programs/ceramics/index.html"
+  },
+  {
+    "input": "What is the Chemistry program at Pittsburg State University?",
+    "response": "The Chemistry program offers various emphases. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/index.html"
+  },
+  {
+    "input": "Tell me about the Chemistry Education program at Pittsburg State University.",
+    "response": "The Chemistry Education program is an emphasis in the Chemistry department. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/chemistry-education/index.html"
+  },
+  {
+    "input": "What is the Chemistry Pre-Medicine/Pre-Medical program at Pittsburg State University?",
+    "response": "The Chemistry Pre-Medicine/Pre-Medical program is an emphasis in the Chemistry department. More details can be found here: https://www.pittstate.edu/science/programs/chemistry/chemistry-pre-medicine/index.html"
+  },
+  {
+    "input": "Tell me about the Child Development program at Pittsburg State University.",
+    "response": "The Child Development program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/child-development/index.html"
+  },
+  {
+    "input": "What is the Civil Construction program at Pittsburg State University?",
+    "response": "The Civil Construction program is an emphasis in the Construction department. More details can be found here: https://www.pittstate.edu/engineering/programs/civil-construction/index.html"
+  },
+  {
+    "input": "Tell me about the Clinical Psychology program at Pittsburg State University.",
+    "response": "The Clinical Psychology program offers a master's emphasis. More details can be found here: https://www.pittstate.edu/psychology/programs/clinical-psychology/index.html"
+  },
+  {
+    "input": "What is the Coaching program at Pittsburg State University?",
+    "response": "The Coaching program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/coaching/index.html"
+  },
+  {
+    "input": "Tell me about the Collision Repair and Insurance Management program at Pittsburg State University.",
+    "response": "The Collision Repair and Insurance Management program is an emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/collision-repair-and-insurance-management/index.html"
+  },
+  {
+    "input": "What is the Collision Repair and Insurance Management Technology program at Pittsburg State University?",
+    "response": "The Collision Repair and Insurance Management Technology program is a 2+2 emphasis in the Automotive Technology department. More details can be found here: https://www.pittstate.edu/automotive-and-engineering/programs/automotive-technology/collision-repair-and-insurance-management-technology/index.html"
+  },
+  {
+    "input": "Tell me about the Communication program at Pittsburg State University.",
+    "response": "The Communication program offers various emphases. More details can be found here: https://www.pittstate.edu/communication/programs/communication/index.html"
+  },
+  {
+    "input": "What is the Communication Education program at Pittsburg State University?",
+    "response": "The Communication Education program is an emphasis in the Communication department. More details can be found here: https://www.pittstate.edu/communication/programs/communication-education/index.html"
+  },
+  {
+    "input": "Tell me about the Community and Family Services program at Pittsburg State University.",
+    "response": "The Community and Family Services program is an emphasis in the Family and Consumer Sciences department. More details can be found here: https://www.pittstate.edu/family/programs/community-and-family-services/index.html"
+  },
+  {
+    "input": "What is the Company Management program at Pittsburg State University?",
+    "response": "The Company Management program is an emphasis in the Business department. More details can be found here: https://www.pittstate.edu/business/programs/company-management/index.html"
+  },
+  {
+    "input": "Tell me about the Computer Science program at Pittsburg State University.",
+    "response": "The Computer Science program offers a major. More details can be found here: https://www.pittstate.edu/science/programs/computer-science/index.html"
+  },
+  {
+    "input": "What is the Construction program at Pittsburg State University?",
+    "response": "The Construction program is a 2+2 emphasis in the Construction department. More details can be found here: https://www.pittstate.edu/engineering/programs/construction/index.html"
+  },
+  {
+    "input": "Tell me about the Construction Engineering Technology program at Pittsburg State University.",
+    "response": "The Construction Engineering Technology program offers a major. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-engineering-technology/index.html"
+  },
+  {
+    "input": "What is the Construction Management program at Pittsburg State University?",
+    "response": "The Construction Management program offers various emphases. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-management/index.html"
+  },
+  {
+    "input": "Tell me about the Construction Technology program at Pittsburg State University.",
+    "response": "The Construction Technology program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-technology/index.html"
+  },
+  {
+    "input": "What is the Construction Technology for Interior Design program at Pittsburg State University?",
+    "response": "The Construction Technology for Interior Design program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/construction-technology-for-interior/index.html"
+  },
+  {
+    "input": "What is the Advanced Vehicle Systems program at Pittsburg State University?",
+    "response": "The Advanced Vehicle Systems program offers an emphasis. More details can be found here: https://www.pittstate.edu/automotive/programs/advanced-vehicle-systems/index.html"
+  },
+  {
+    "input": "Tell me about the Art program at Pittsburg State University.",
+    "response": "The Art program offers various emphases. More details can be found here: https://www.pittstate.edu/art/programs/art/index.html"
+  },
+  {
+    "input": "What is the Art Education program at Pittsburg State University?",
+    "response": "The Art Education program offers a major. More details can be found here: https://www.pittstate.edu/art/programs/art-education/index.html"
+  },
+  {
+    "input": "Tell me about the Art History program at Pittsburg State University.",
+    "response": "The Art History program offers a certificate. More details can be found here: https://www.pittstate.edu/art/programs/art-history/index.html"
+  },
+  {
+    "input": "What is the Art Studio Practice program at Pittsburg State University?",
+    "response": "The Art Studio Practice program offers an emphasis. More details can be found here: https://www.pittstate.edu/art/programs/art-studio-practice/index.html"
+  },
+  {
+    "input": "Tell me about the Astrophysics program at Pittsburg State University.",
+    "response": "The Astrophysics program offers an emphasis. More details can be found here: https://www.pittstate.edu/science/programs/astrophysics/index.html"
+  },
+  {
+    "input": "What is the Autism Spectrum Disorders program at Pittsburg State University?",
+    "response": "The Autism Spectrum Disorders program offers an online graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/autism-spectrum-disorders/index.html"
+  },
+  {
+    "input": "Tell me about the Automation Engineering program at Pittsburg State University.",
+    "response": "The Automation Engineering program offers a minor. More details can be found here: https://www.pittstate.edu/engineering/programs/automation-engineering/index.html"
+  },
+  {
+    "input": "What is the Automotive Mechanical Design program at Pittsburg State University?",
+    "response": "The Automotive Mechanical Design program offers an emphasis. More details can be found here: https://www.pittstate.edu/automotive/programs/automotive-mechanical-design/index.html"
+  },
+  {
+    "input": "Tell me about the Automotive Service Technology program at Pittsburg State University.",
+    "response": "The Automotive Service Technology program offers a major. More details can be found here: https://www.pittstate.edu/automotive/programs/automotive-service-technology/index.html"
+  },
+  {
+    "input": "What is the Automotive Technical program at Pittsburg State University?",
+    "response": "The Automotive Technical program offers an emphasis. More details can be found here: https://www.pittstate.edu/automotive/programs/automotive-technical/index.html"
+  },
+  {
+    "input": "Tell me about the Automotive Technology program at Pittsburg State University.",
+    "response": "The Automotive Technology program offers a major. More details can be found here: https://www.pittstate.edu/automotive/programs/automotive-technology/index.html"
+  },
+  {
+    "input": "What is the Automotive/Power Mechanics Technology program at Pittsburg State University?",
+    "response": "The Automotive/Power Mechanics Technology program offers a 2+2 emphasis. More details can be found here: https://www.pittstate.edu/automotive/programs/automotive-power-mechanics-technology/index.html"
+  },
+  {
+    "input": "Tell me about the Bachelor of Music in Music Education program at Pittsburg State University.",
+    "response": "The Bachelor of Music in Music Education program offers an emphasis. More details can be found here: https://www.pittstate.edu/music/programs/bachelor-of-music-in-music-education/index.html"
+  },
+  {
+    "input": "What is the Behavior Analysis program at Pittsburg State University?",
+    "response": "The Behavior Analysis program offers a master's emphasis. More details can be found here: https://www.pittstate.edu/psychology/programs/behavior-analysis/index.html"
+  },
+  {
+    "input": "Tell me about the Behavior Analysis Certificate program at Pittsburg State University.",
+    "response": "The Behavior Analysis Certificate program offers a graduate certificate. More details can be found here: https://www.pittstate.edu/psychology/programs/behavior-analysis-certificate/index.html"
+  },
+  {
+    "input": "What is the Biochemistry program at Pittsburg State University?",
+    "response": "The Biochemistry program offers an emphasis. More details can be found here: https://www.pittstate.edu/science/programs/biochemistry/index.html"
+  },
+  {
+    "input": "Tell me about the Biology program at Pittsburg State University.",
+    "response": "The Biology program offers various emphases. More details can be found here: https://www.pittstate.edu/science/programs/biology/index.html"
+  },
+  {
+    "input": "What is the Biology Education program at Pittsburg State University?",
+    "response": "The Biology Education program offers an emphasis. More details can be found here: https://www.pittstate.edu/science/programs/biology-education/index.html"
+  },
+  {
+    "input": "Tell me about the Botany program at Pittsburg State University.",
+    "response": "The Botany program offers an emphasis. More details can be found here: https://www.pittstate.edu/science/programs/botany/index.html"
+  },
+  {
+    "input": "What is the BSN Nursing program at Pittsburg State University?",
+    "response": "The BSN Nursing program offers an emphasis. More details can be found here: https://www.pittstate.edu/nursing/programs/bsn-nursing/index.html"
+  },
+  {
+    "input": "Tell me about the Building Information Modeling (BIM) program at Pittsburg State University.",
+    "response": "The Building Information Modeling (BIM) program offers an emphasis. More details can be found here: https://www.pittstate.edu/engineering/programs/building-information-modeling/index.html"
+  },
+  {
+    "input": "What is the Building Principal program at Pittsburg State University?",
+    "response": "The Building Principal program offers an online graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/building-principal/index.html"
+  },
+  {
+    "input": "Tell me about the Business Administration program at Pittsburg State University.",
+    "response": "The Business Administration program offers a minor. More details can be found here: https://www.pittstate.edu/business/programs/business-administration/index.html"
+  },
+  {
+    "input": "What is the Business Administration (MBA) program at Pittsburg State University?",
+    "response": "The Business Administration (MBA) program offers a master's degree. More details can be found here: https://www.pittstate.edu/business/programs/business-administration-mba/index.html"
+  },
+  {
+    "input": "Tell me about the Business Administration (Online MBA) program at Pittsburg State University.",
+    "response": "The Business Administration (Online MBA) program offers an online master's degree. More details can be found here: https://www.pittstate.edu/business/programs/business-administration-online-mba/index.html"
+  },
+  {
+    "input": "What is the Business Economics program at Pittsburg State University?",
+    "response": "The Business Economics program offers a major. More details can be found here: https://www.pittstate.edu/business/programs/business-economics/index.html"
+  },
+  {
+    "input": "Tell me about the Business Studies program at Pittsburg State University.",
+    "response": "The Business Studies program offers a major. More details can be found here: https://www.pittstate.edu/business/programs/business-studies/index.html"
+  },
+  {
+    "input": "What is the Career and Technical Education program at Pittsburg State University?",
+    "response": "The Career and Technical Education program offers various emphases. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education/index.html"
+  },
+  {
+    "input": "Tell me about the Career and Technical Education Administrator program at Pittsburg State University.",
+    "response": "The Career and Technical Education Administrator program offers a graduate certificate. More details can be found here: https://www.pittstate.edu/education/programs/career-and-technical-education-administrator/index.html"
+  },
+  {
+    "input": "How many academic programs does Pittsburg State University offer?",
+    "response": "Pittsburg State University offers over 200 academic programs across a variety of fields including business, education, engineering, science, humanities, and healthcare."
+  },
+  {
+    "input": "What types of degrees are available at Pittsburg State University?",
+    "response": "Pittsburg State University offers degrees at all levels, including associate's, bachelor's, master's, and doctoral programs. They also provide certificate programs and online degree options."
+  },
+  {
+    "input": "Does Pittsburg State University offer online programs?",
+    "response": "Yes, Pittsburg State University offers a range of online programs, especially in fields such as business administration, education, and health sciences."
+  },
+  {
+    "input": "Can I study healthcare-related programs at Pittsburg State University?",
+    "response": "Yes, Pittsburg State University provides healthcare programs including nursing, healthcare administration, and allied health fields. Many of these programs have online options as well."
+  },
+  {
+    "input": "What are some of the engineering programs available at Pittsburg State University?",
+    "response": "Engineering-related programs at PSU include Electronics Engineering Technology, Automotive Technology, and Engineering Technology. These programs are designed to meet industry standards and prepare students for technical careers."
+  },
+  {
+    "input": "Are there any special emphasis programs at Pittsburg State University?",
+    "response": "Yes, Pittsburg State University offers various emphasis areas within majors, such as Advanced Vehicle Systems, Chemistry Pre-Medicine, and Environmental Chemistry, allowing students to specialize within a broader field of study."
+  },
+  {
+    "input": "What certificate programs does Pittsburg State University offer?",
+    "response": "Pittsburg State University provides several certificate programs across disciplines, including Additive Manufacturing, Autism Spectrum Disorders, and Core Studio Media, which offer targeted education without requiring a full degree."
+  },
+  {
+    "input": "What kind of business programs are available at Pittsburg State University?",
+    "response": "Business programs at Pittsburg State University cover a wide range, including Accounting, Business Administration (MBA), International Business, and specialties like Fraud Examination and Finance."
+  },
+  {
+    "input": "How can I explore programs offered by Pittsburg State University?",
+    "response": "You can explore all programs offered by Pittsburg State University on their website, which provides detailed information about each program, including degrees offered, specializations, and certificates."
+  },
+  {
+    "input": "Does Pittsburg State University offer any programs in science and technology?",
+    "response": "Yes, Pittsburg State University has a variety of science and technology programs, including majors in Biology, Chemistry, Computer Science, and specialized technology tracks like Electronics Engineering and Environmental Science."
+  },
+  {
+    "input": "Are there programs specifically for educators at Pittsburg State University?",
+    "response": "Pittsburg State University offers many programs in education, including Early Childhood Education, Educational Leadership, and several graduate-level certificates and master's degrees tailored to teaching professionals."
+  },
+  {
+    "input": "What is the focus of Pittsburg State University's programs?",
+    "response": "Pittsburg State University's programs emphasize practical experience, industry readiness, and flexibility, offering students diverse majors, minors, and certificate options, with many courses available online."
+  },
+  {
+    "input": "What are the admission requirements for Pittsburg State University?",
+    "response": "Admission requirements for Pittsburg State University vary by program. Generally, they include a completed application, transcripts, standardized test scores, and letters of recommendation. More details can be found on the PSU admissions website."
+  },
+  {
+    "input": "Does Pittsburg State University offer financial aid?",
+    "response": "Yes, Pittsburg State University offers various financial aid options including scholarships, grants, loans, and work-study programs. More information can be found on the PSU financial aid website."
+  },
+  {
+    "input": "What student organizations are available at Pittsburg State University?",
+    "response": "Pittsburg State University has a wide range of student organizations, including academic clubs, cultural groups, and recreational activities. A full list of student organizations can be found on the PSU student life website."
+  },
+  {
+    "input": "What are the housing options at Pittsburg State University?",
+    "response": "Pittsburg State University offers several housing options including residence halls, apartments, and family housing. More details can be found on the PSU housing website."
+  },
+  {
+    "input": "What career services are available at Pittsburg State University?",
+    "response": "Pittsburg State University provides career services such as resume building, interview preparation, job fairs, and internship opportunities. More information can be found on the PSU career services website."
+  },
+  {
+    "input": "What is the campus life like at Pittsburg State University?",
+    "response": "Campus life at Pittsburg State University is vibrant and diverse, with numerous events, activities, and resources available to students. More details can be found on the PSU campus life website."
+  },
+  {
+    "input": "Does Pittsburg State University offer study abroad programs?",
+    "response": "Yes, Pittsburg State University offers a variety of study abroad programs in different countries. More information can be found on the PSU study abroad website."
+  },
+  {
+    "input": "What support services are available for students at Pittsburg State University?",
+    "response": "Pittsburg State University offers various support services including academic advising, counseling, health services, and tutoring. More details can be found on the PSU student support services website."
+  },
+  {
+    "input": "What are the library resources at Pittsburg State University?",
+    "response": "Pittsburg State University has a comprehensive library with resources such as books, journals, databases, and study spaces. More information can be found on the PSU library website."
+  },
+  {
+    "input": "What athletic programs are available at Pittsburg State University?",
+    "response": "Pittsburg State University offers a range of athletic programs including football, basketball, track and field, and more. More details can be found on the PSU athletics website."
+  }
+]

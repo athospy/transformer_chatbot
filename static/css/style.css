@@ -272,3 +272,38 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
   background: var(--accent); color: var(--on-accent);
   border: 0; border-radius: 8px; cursor: pointer;
 }
+
+/* ---------- Retrieval answer extras: link, model button, model's answer ---------- */
+
+.bubble a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+.model-btn {
+  align-self: flex-start;
+  margin: 6px 0 0 4px;
+  padding: 5px 12px;
+  background: var(--surface); color: var(--accent-text);
+  border: 1px solid var(--border); border-radius: 999px;
+  font-size: 12.5px; cursor: pointer;
+}
+.model-btn:hover { border-color: var(--accent); }
+
+.model-block {
+  margin: 8px 0 0 12px;
+  padding: 8px 12px;
+  border-left: 3px solid var(--border);
+}
+.model-label { margin: 0 0 4px; font-size: 12px; font-weight: 600; color: var(--text-muted); }
+.model-text { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--text); font-size: 14px; }
+.model-error { margin: 0; color: var(--danger); font-size: 13.5px; }
+.model-block .typing { padding: 2px 0; }
+.model-block .meta { margin-left: 0; }
+
+/* ---------- Eval table in "How it works" ---------- */
+
+.table-wrap { overflow-x: auto; margin: 8px 0; }
+.eval-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.eval-table th, .eval-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+.eval-table thead th { color: var(--text-muted); font-weight: 600; font-size: 12px; }
+.eval-table tbody th { font-weight: 500; }
+.eval-table td { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.footnote { font-size: 12px; }

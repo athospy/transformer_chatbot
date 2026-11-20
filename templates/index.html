@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>PSU programs assistant · fine-tuned DialoGPT demo</title>
-    <meta name="description" content="A small chatbot about Pittsburg State University programs: DialoGPT-small fine-tuned with Hugging Face Transformers and PyTorch, served by Django on CPU.">
+    <meta name="description" content="A small chatbot about Pittsburg State University programs: retrieval with sentence embeddings, plus a DialoGPT-small fine-tuned with Hugging Face Transformers and PyTorch, compared in an eval.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="PSU programs assistant · fine-tuned DialoGPT demo">
-    <meta property="og:description" content="DialoGPT-small fine-tuned on Pittsburg State University program Q&amp;A, served by Django on a 1-CPU server. A learning project by Santiago Morel.">
+    <meta property="og:description" content="Retrieval vs. a fine-tuned DialoGPT-small on Pittsburg State University program Q&amp;A, with an eval. A learning project by Santiago Morel.">
     <meta property="og:url" content="https://chatbot.santiagomorel.dev/">
     <meta name="theme-color" content="#f4f6fb" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     {# ?v= makes browsers fetch the new file after a deploy (nginx serves /static/ with no versioning) #}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3">
   </head>
   <body>
     {# Icons: simplified Lucide icons (ISC license), inline so there's no icon font to download #}
@@ -27,7 +27,7 @@
         </div>
         <div class="titles">
           <h1>PSU programs assistant</h1>
-          <p class="subtitle">Fine-tuned DialoGPT-small · runs on CPU · about 10 s per answer</p>
+          <p class="subtitle">Instant answers by retrieval · a fine-tuned DialoGPT-small on demand</p>
         </div>
         <div class="header-actions">
           <button type="button" class="btn-ghost" id="about-btn" aria-haspopup="dialog">
@@ -43,7 +43,7 @@
       <div class="messages" id="messages" role="log" aria-live="polite" aria-label="Conversation">
         <section class="welcome" aria-label="About this chatbot">
           <p>Ask about Pittsburg State University's academic programs.</p>
-          <p class="note">It's a small model fine-tuned in 2024 on about 170 question–answer pairs, so answers are often imperfect. <button type="button" class="link-btn" data-open-about>Here's why</button>.</p>
+          <p class="note">Answers come from {{ data_summary.entries }} written Q&amp;As ({{ data_summary.programs }} programs from A to C, plus general questions), found by meaning. Under each answer you can also see what a small fine-tuned language model says. <button type="button" class="link-btn" data-open-about>How it works</button>.</p>
           <p class="hint">Try one:</p>
           <div class="suggestions">
             {% for question in suggested_questions %}
@@ -71,31 +71,45 @@
     <dialog class="about" id="about-dialog" aria-labelledby="about-title">
       <div class="about-body">
         <h2 id="about-title">How it works</h2>
-        <p>A learning project from November 2024 that covers the whole loop: build a small dataset, fine-tune a language model, save it, serve it behind a web UI, and deploy it.</p>
+        <p>Three versions of the same idea, each fixing what the previous one got wrong.</p>
 
-        <h3>Model</h3>
-        <p><a href="https://huggingface.co/microsoft/DialoGPT-small">microsoft/DialoGPT-small</a>, a 124M-parameter GPT-2 model, fine-tuned with Hugging Face Transformers and PyTorch on a laptop CPU.</p>
+        <h3>2024, version 1: string matching</h3>
+        <p>ChatterBot's "best match" returned the stored answer whose question looked most like yours, letter by letter. It missed anything worded differently.</p>
 
-        <h3>Data</h3>
-        <p>About 170 question–answer pairs written from PSU's program pages. A script added reworded and shortened variants of each one.</p>
+        <h3>2024, version 2: a fine-tuned language model</h3>
+        <p><a href="https://huggingface.co/microsoft/DialoGPT-small">microsoft/DialoGPT-small</a> (124M parameters) fine-tuned with Hugging Face Transformers and PyTorch. A bug in the training data format meant it learned the vocabulary of PSU programs, not how to answer: the question and the answer were tokenized separately and lined up word by word, instead of being one sequence with the loss on the answer only.</p>
 
-        <h3>Training</h3>
-        <p>AdamW (learning rate 2e-5) with a cosine schedule, effective batch size 16, up to 10 epochs, an 80/20 train/validation split, and early stopping on validation loss.</p>
-
-        <h3>Serving</h3>
-        <p>Django and gunicorn (1 worker, 4 threads) behind nginx, on a 1-vCPU, 2 GB server. Each answer is generated with:</p>
+        <h3>2026, version 3: retrieval first, the model fixed and measured</h3>
+        <p><strong>Answers</strong> come from retrieval. Your question and the {{ data_summary.entries }} written questions are turned into embeddings with all-MiniLM-L6-v2, and the closest one wins, with the university's name removed first (it made unrelated questions look alike). Below a similarity of {{ threshold }}, the bot says it doesn't know instead of guessing. That cut-off was chosen on a separate dev set.</p>
+        <p><strong>The fine-tuned model</strong> was retrained the right way: one sequence per pair, question, end marker, then answer, with the loss on the answer only{% if training %}. It trained on {{ training.train_examples }} examples; early stopping kept epoch {{ training.best_epoch }} of {{ training.history|length }} (validation loss {{ training.best_val_loss }}){% endif %}. It runs on demand on this 1-CPU server with:</p>
         <ul class="settings">
           {% for name, value in generation_settings.items %}
             <li><code>{{ name }}={{ value }}</code></li>
           {% endfor %}
         </ul>
 
-        <h3>Why the answers are weak</h3>
-        <p>In training, the question and the answer were tokenized separately and lined up position by position. A causal language model needs them as one sequence (question, end marker, answer) with the loss computed only on the answer. So the model learned the vocabulary of PSU programs, but not how to answer the question asked.</p>
-        <p>Today I'd fix that format, and compare the result against a retrieval baseline that returns the closest of the 170 written answers. For a fixed FAQ like this one, retrieval is often the better tool.</p>
+        {% if eval %}
+        <h3>Eval</h3>
+        <p>{{ eval.test_questions }} test questions the models never saw: new wordings, typos, programs the data doesn't cover, and off-topic questions ({{ eval.dev_questions }} more were used only to choose settings).</p>
+        <div class="table-wrap">
+          <table class="eval-table">
+            <thead><tr><th scope="col">System</th><th scope="col">Right answer*</th><th scope="col">Says "don't know" when it should</th><th scope="col">Invented links</th></tr></thead>
+            <tbody>
+              {% for row in eval.rows %}
+                <tr><th scope="row">{{ row.label }}</th><td>{{ row.right }}%</td><td>{{ row.dont_know }}%</td><td>{{ row.invented }}%</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">* Retrieval: the right written answer. Models: the exact official link for program questions. Details in <a href="https://github.com/athospy/transformer_chatbot/blob/main/eval/RESULTS.md">eval/RESULTS.md</a>.</p>
+        <p>For a fixed FAQ like this one, retrieval is the better tool: it's instant, it never invents a link, and it can say "I don't know". The model shows what fine-tuning learns, and where it falls short.</p>
+        {% endif %}
+
+        <h3>Limits</h3>
+        <p>The data only covers programs from A to C (the 2024 scrape stopped there) and some general questions. A real PSU program like Graphic Design gets "I don't know".</p>
 
         <p class="about-links">
-          <a href="https://github.com/athospy/transformer_chatbot#known-limitations">Known limitations in the README</a> ·
+          <a href="https://github.com/athospy/transformer_chatbot">Code, data and eval on GitHub</a> ·
           <a href="https://santiagomorel.dev/">santiagomorel.dev</a>
         </p>
         <form method="dialog" class="about-actions">
@@ -105,6 +119,6 @@
     </dialog>
 
     {{ generation_settings|json_script:"generation-settings" }}
-    <script src="{% static 'js/chat.js' %}?v=2" defer></script>
+    <script src="{% static 'js/chat.js' %}?v=3" defer></script>
   </body>
 </html>
