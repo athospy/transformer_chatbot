@@ -139,3 +139,7 @@ core/program_maker.py   data augmentation script
 templates/index.html    chat UI
 static/css/style.css
 ```
+
+## License
+
+MIT (see `LICENSE`). The base model, microsoft/DialoGPT-small, is MIT-licensed too.
