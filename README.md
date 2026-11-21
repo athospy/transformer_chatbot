@@ -15,6 +15,9 @@ three times:
 **Live demo:** https://chatbot.santiagomorel.dev/ (a 1-vCPU server: retrieval answers in milliseconds,
 the model in about 10 s)
 
+**Model weights:** [athospy/dialogpt-small-psu-programs](https://huggingface.co/athospy/dialogpt-small-psu-programs)
+on Hugging Face
+
 ## Results
 
 On 76 held-out test questions (`eval/RESULTS.md` has every column):
@@ -159,7 +162,14 @@ python scripts/download_retriever.py        # all-MiniLM-L6-v2 into core/retriev
 Then the generation model, either:
 
 - **train it** (about 1.5 hours on an Apple Silicon Mac's GPU): `python core/training.py`
-- **or download it** from Hugging Face (link added here once it is published)
+- **or download it** from Hugging Face,
+  [athospy/dialogpt-small-psu-programs](https://huggingface.co/athospy/dialogpt-small-psu-programs) (~500 MB):
+
+  ```bash
+  pip install -U huggingface_hub
+  hf download athospy/dialogpt-small-psu-programs --local-dir core/program_model
+  cp core/program_model/{merges.txt,special_tokens_map.json,tokenizer.json,tokenizer_config.json,vocab.json} core/program_tokenizer/
+  ```
 
 For UI work, the tiny random model `sshleifer/tiny-gpt2` saved as `core/program_model` answers instantly
 (with nonsense).
